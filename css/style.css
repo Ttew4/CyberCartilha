@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.nunito{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+:root {
+  --cor-fundo:           #ffffff;
+  --cor-texto:           rgb(54, 54, 54);
+  --cor-menu:            rgb(28, 152, 220);
+  --cor-texto-menu:      rgb(224, 224, 224);
+  --cor-destaque-tema:   rgb(255, 221, 0);
+  --cor-destaque:        #0071cd;
+  --cor-destaque-sombra: rgba(4, 84, 204, 0.377);
+}
+
+:root.dark-mode {
+  --cor-fundo:           rgb(54, 54, 54);
+  --cor-texto:           #d3d3d3;
+  --cor-menu:            rgb(18, 85, 121);
+  --cor-texto-menu:      rgb(18, 120, 221);
+  --cor-destaque-tema:   rgb(148, 128, 2);
+  --cor-destaque:        #040f84;
+  --cor-destaque-sombra: rgba(9, 1, 103, 0.377);
+}
+
+header {
+    font: 1em 'Luckiest Guy';
+    background-color: var(--cor-menu);
+    border-bottom: 2px solid var(--cor-destaque-tema);
+    padding: 10px;
+}
+header nav{
+    color: var(--cor-texto-menu);
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+header nav a{
+    display: inline-block;
+    border: 1px solid var(--cor-destaque-sombra);
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+    padding: 6px 14px;
+    margin: 4px;
+    border-radius: 4px; 
+    align-items: center;
+}
+header nav a:hover{
+    color: var(--cor-destaque);
+}
+
+button:hover{
+    color: rgb(1,1,1);
+}
+
+button {
+  font: 1.2em 'Black Ops One';
+  padding: 6px 14px;
+  margin: 4px;
+  cursor: pointer;
+  background-color: var(--cor-menu);
+  color: var(--cor-botao-texto);
+  border: 1px solid var(--cor-destaque-sombra);
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+body {
+    font: 1.5em 'Nunito';
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin:0;
+}
+
+body main{ 
+    flex:1;
+    padding: 0 5% 0 5%;
+}
+
+body article{
+    font: 1rem 'PT Serif';
+    align-items: center;
+    padding: 6px 14px;
+    margin: 4px 25% 0;
+    border: 2px solid var(--cor-destaque-tema);
+    border-radius: 5px;
+}
+
+body article ul{
+    color:var(--cor-destaque-tema);
+    font-size: 1.2rem;
+}
+
+body article ul a{
+    font-size: large;
+    text-decoration: none;
+    font:900;
+}
+
+body article img{
+width: 25%;
+height: 25%;
+display: flex;
+justify-content: center;
+
+}
+
+body article h2,p{
+    padding: 1%;
+}
