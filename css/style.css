@@ -125,3 +125,47 @@ justify-content: center;
 body article h2,p{
     padding: 1%;
 }
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grupo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-grupo input, 
+.form-grupo textarea {
+    padding: 10px;
+    border: 1px solid var(--cor-destaque-tema);
+    border-radius: 5px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+}
+
+.form-grupo input:focus, 
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 5px var(--cor-destaque-sombra);
+}
+
+.form-grupo textarea {
+    resize: vertical;
+}
+
+.formulario-contato button {
+    align-self: flex-start;
+    padding: 10px 20px;
+}
