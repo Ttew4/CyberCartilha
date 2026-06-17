@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />  
+    <title>Gerar senha</title>
+</head>
+<body>
+   <header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="content.html">Conteúdo</a>
+        <a href="contact.html">Contato</a>
+        <a href="seguranca.html">Gerador de Senhas</a>
+        <a href="sobre.html">Sobre</a>
+        <div class="acessibilidade">
+            <button id="btn-dark">☾</button>     
+            <button id="btn-menos">A-</button> 
+            <button id="btn-mais">A+</button>           
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Gerador de Senhas Seguras 🔐</h2>
+            <div class="formulario-contato">
+                
+                <div class="form-grupo">
+                    <label for="tamanho-senha">Tamanho da senha: <span id="valor-tamanho">8</span> caracteres</label>
+                    <input type="range" id="tamanho-senha" min="0" max="4" step="1" value="2" style="cursor: pointer; accent-color: var(--cor-destaque);">
+                </div>
+
+                <div class="form-grupo" style="flex-direction: row; align-items: center; gap: 10px;">
+                    <input type="password" id="senha-gerada" readonly placeholder="Sua senha aparecerá aqui..." style="flex: 1; margin: 0;">
+                    <button type="button" id="btn-toggle-senha" style="margin: 0; padding: 10px 15px;">👁️</button>
+                </div>
+                
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <button type="button" id="btn-gerar">Gerar Senha</button>
+                    <button type="button" id="btn-copiar">Copiar Senha</button>
+                </div>
+            </div>
+        </article>
+    </main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
