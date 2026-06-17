@@ -1,28 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Cartilha</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-    <nav>
+      <nav>
         <a href="index.html">Home</a>
         <a href="content.html">Conteúdo</a>
         <a href="contact.html">Contato</a>
         <a href="seguranca.html">Gerador de Senhas</a>
         <a href="sobre.html">Sobre</a>
         <div class="acessibilidade">
-            <button id="btn-dark">☾</button>     
-            <button id="btn-menos">A-</button> 
-            <button id="btn-mais">A+</button>           
+          <button id="btn-dark">☾</button>
+          <button id="btn-menos">A-</button>
+          <button id="btn-mais">A+</button>
         </div>
-    </nav>
+      </nav>
     </header>
+    <main>
+      <div class="cards-container">
+        <article class="card">
+          <div class="card-icon">🔐</div>
+          <h3>Senhas Fortes</h3>
+          <p>
+            Usar senhas curtas é como trancar a porta com um cadeado de
+            brinquedo. Use pelo menos 12 caracteres com uma mistura de letras,
+            números e símbolos.
+          </p>
+        </article>
 
+        <article class="card">
+          <div class="card-icon">📩</div>
+          <h3>Evite Phishing</h3>
+          <p>
+            Recebeu um link suspeito prometendo prêmios? Desconfie! Nunca clique
+            em links via SMS ou e-mail sem verificar os canais oficiais.
+          </p>
+        </article>
 
-<script src="js/script.js"></script>
-</body>
+        <article class="card">
+          <div class="card-icon">✅</div>
+          <h3>Ative o MFA</h3>
+          <p>
+            A autenticação de múltiplos fatores é uma camada extra. Mesmo que
+            descubram sua senha, não entrarão sem o código do seu autenticador.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
